@@ -1,0 +1,5 @@
+[gerrit]
+host=reviews.sl.attcompute.com
+port=22
+project=cookbook-nova.git
+defaultbranch=master
