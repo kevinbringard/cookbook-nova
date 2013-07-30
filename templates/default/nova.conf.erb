@@ -74,6 +74,10 @@ remove_unused_resized_minimum_age_seconds=<%= node["nova"]["libvirt"]["remove_un
 remove_unused_original_minimum_age_seconds=<%= node["nova"]["libvirt"]["remove_unused_original_minimum_age_seconds"] %>
 # Write a checksum for files in _base to disk (default: false)
 checksum_base_images=<%= node["nova"]["libvirt"]["checksum_base_images"] %>
+<% if node["nova"]["config_drive"]["use"] %>
+force_config_drive=true
+<% end %>
+
 
 ##### VNCPROXY #####
 novncproxy_base_url=<%= @novncproxy_base_url %>

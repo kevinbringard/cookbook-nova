@@ -156,6 +156,7 @@ default["nova"]["config"]["snapshot_image_format"] = "qcow2"
 default["nova"]["config"]["start_guests_on_host_boot"] = false
 # requires https://review.openstack.org/#/c/8423/
 default["nova"]["config"]["resume_guests_state_on_host_boot"] = true
+default["nova"]["config_drive"]["use"] = false
 
 # Volume API class (driver)
 default["nova"]["config"]["volume_api_class"] = "nova.volume.cinder.API"
